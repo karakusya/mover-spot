@@ -1,0 +1,23 @@
+.header__container {
+    display: flex;
+    gap: 100px;
+
+}
+
+.logo {
+    /* Встановлюємо ширину та висоту для картинки */
+    width: 251px;
+    height: 139px;
+    animation: 2s linear 1 rotate;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+  
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  

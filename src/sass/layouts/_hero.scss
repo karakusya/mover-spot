@@ -1,0 +1,43 @@
+main{
+    background-image: url(/src/images/MainPage7.png);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.hero{
+
+}
+
+.hero__container{
+
+position: relative;
+
+
+
+}
+
+
+.hero__container::before,
+.hero__container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px; /* розмір бокових падінгів */
+  background-image: url(/src/images/stripes.png); /* колір фону */
+}
+
+.hero__container::before {
+  left: 0;
+border-right: 1px solid #fff;
+}
+
+
+.hero__container::after {
+  right: 0;
+  border-left: 1px solid #fff;
+}
+.hero__title {
+width: 100%;
+font-size: 40px;
+}

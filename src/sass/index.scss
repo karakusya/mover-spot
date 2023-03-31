@@ -1,0 +1,14 @@
+@import './utils/mixins';
+
+@import './base/reset';
+@import './base/section';
+@import './base/container';
+
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/welcome';
+@import './layouts/we-are';
+@import './layouts/survey';
+@import './layouts/send-mail';
+@import './layouts/footer';
