@@ -60,6 +60,7 @@ img {
 }
 
 main {
+  background-color: #00338E;
   background-image: url(/src/images/background/background_min-mob.jpg);
   background-repeat: repeat;
   background-size: cover;
