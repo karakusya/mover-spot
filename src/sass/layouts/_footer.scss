@@ -1,0 +1,76 @@
+
+.footer__container{
+    padding: 4px 8px 15px 8px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+@include mq(mob){
+    padding: 6px 10px 22px 10px;
+}
+@include mq(tab){
+    padding: 18px 10px;
+}
+@include mq(min-desk){
+    padding: 0 40px;
+}
+@include mq(desk){
+    padding: 0 120px;
+}
+}
+
+.footer__logo-wrapper{
+width: 74px;
+padding: 0;
+@include mq(mob){
+    width: 110px;
+}
+@include mq(tab){
+    width: 147px;
+}
+@include mq(min-desk){
+    width: 212px;
+}
+@include mq(desk){
+    width: 241px;
+}
+}
+
+.footer__text{
+max-width: 93px;
+font-weight: 800;
+font-size: 8px;
+line-height: 1.5;
+text-align: center;
+
+color: #00338E;
+@include mq(mob){
+    max-width: 160px;
+    font-size: 14px;
+}
+@include mq(tab){
+    max-width:187px ;
+    font-size: 17px;
+}
+@include mq(min-desk){
+    max-width:373px ;
+    font-size: 24px;
+}
+@include mq(desk){
+    max-width:381px ;
+}
+}
+
+.footer .email {
+    font-size: 8px;
+    @include mq(mob){
+        font-size: 10px;
+    }
+    @include mq(tab){
+        font-size: 15px;
+    }
+    @include mq(min-desk){
+        font-size: 24px;
+    }
+    
+}

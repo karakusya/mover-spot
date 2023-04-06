@@ -1,0 +1,41 @@
+@mixin mq($range) {
+    $min-mob:320px;
+    $mob:480px;
+    $tab:640px;
+    $min-desk:1020px;
+    $desk:1400px;
+    @if $range==min-mob{
+        @media screen and (min-width:$min-mob) {
+            @content;
+        } 
+    }@else if $range==mob{
+        @media screen and (min-width:$mob) {
+            @content;
+        }
+      }
+    @else if $range==tab{
+        @media screen and (min-width:$tab) {
+            @content;
+        }
+    }
+    @else if $range==min-desk{
+        @media screen and (min-width:$min-desk) {
+            @content;
+        }
+    }
+    @else if $range==desk{
+        @media screen and (min-width:$desk) {
+            @content;
+        }
+    }
+    @else if $range == retina {
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (-moz-min-device-pixel-ratio: 2),
+          screen and (-o-min-device-pixel-ratio: 2/1),
+          screen and (-webkit-min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          @content;
+        }
+      }
+}

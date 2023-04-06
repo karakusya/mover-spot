@@ -1,0 +1,235 @@
+.survey{
+
+position: relative;
+}
+
+.survey__container{
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+padding-top: 39px;
+padding-bottom: 39px;
+
+@include mq(mob){
+  padding-bottom: 14px;
+padding-top: 17px;
+}
+@include mq(tab){
+  padding-bottom: 26px;
+  padding-top: 27px;
+}
+@include mq(min-desk){
+  padding-bottom: 42px;
+  padding-top: 68px;
+}
+@include mq(desk){
+
+padding-top: 59px;
+}
+
+
+}
+
+
+.survey__container::before {
+
+  @include mq(mob){
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 70px; /* розмір бокових падінгів */
+    background-image: url(/src/images/background/stripes.png); /* колір фону */
+  }
+  @include mq(min-desk){
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* розмір бокових падінгів */
+    background-image: url(/src/images/background/stripes.png); /* колір фону */
+  }
+  @include mq(desk){
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px; /* розмір бокових падінгів */
+    background-image: url(/src/images/background/stripes.png); /* колір фону */
+  }
+
+
+  
+}
+.survey__container::after {
+
+  @include mq(mob){
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 70px; /* розмір бокових падінгів */
+    
+  }
+  @include mq(min-desk){
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* розмір бокових падінгів */
+    
+  }
+  @include mq(desk){
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px; /* розмір бокових падінгів */
+    
+  }
+
+
+  
+}
+
+.survey__container::before {
+    @include mq(mob){
+    left: 0;
+  border-right: 1px solid #fff;
+  }}
+.survey__container::after {
+    @include mq(mob){
+    right: 0;
+  border-left: 1px solid #fff;
+  }}
+
+.survey .survey__link {
+    margin-bottom: 23px;
+
+    @include mq(mob){
+      margin-bottom: 35px;
+    }
+    @include mq(desk){
+      margin-bottom: 52px;
+    }
+    
+}
+
+.survey__title-container{
+  position: relative;
+  margin-bottom: 21px;
+  width: 100%;
+  @include mq(mob){
+  
+    margin-bottom: 14px;
+  }
+  @include mq(tab){
+  
+    margin-bottom: 10px;
+  }
+  @include mq(min-desk){
+  
+    margin-bottom: 34px;
+  }
+  @include mq(desk){
+    margin-bottom: 17px;
+  }
+}
+.survey .hex__right {
+  position: absolute;
+  top: 50%;
+  right:-25px;
+  display: flex;
+  align-items: center;
+  transform: translate(0, -50%);
+  @include mq(mob){
+    right:0;
+  }
+  }
+  
+  .survey .hex__left{
+    position: absolute;
+  top: 50%;
+  left:-25px;
+  display: flex;
+  align-items: center;
+  transform: translate(0, -50%);
+@include mq(mob){
+  left:0;
+}
+  }
+  .survey .hex__line{
+    height: 1px;
+  width: 44px;
+  background-color: #fff;
+  @include mq(mob){
+    width: 46px;
+  }
+
+  @include mq(tab){
+    width: 68px;
+  }
+  @include mq(min-desk){
+    width: 148px;
+  }
+  
+  @include mq(desk){
+    width: 347px;
+  }
+  }
+
+.survey__title{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+      @include mq(mob){
+      font-size: 23px;
+        }
+    @include mq(tab){
+      font-size: 35px;
+        }
+    @include mq(min-desk){
+      font-size: 42px;
+        }
+    @include mq(desk){
+        }
+}
+
+.survey__text{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.25;
+    white-space: pre-line;
+    color: #FFFFFF;
+  @include mq(mob){
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 0 25px;
+  }
+  @include mq(tab){
+    text-align: center;
+padding: 0 20px;
+  }
+  @include mq(min-desk){
+    font-size: 16px;
+    line-height: 1.75;
+    padding: 0 43px;
+  }
+  @include mq(desk){
+    font-size: 26px;
+    line-height: 1.35;
+    padding: 0 62px;
+  }
+}
+
+.span__br::before {
+    @media (max-width: 639px) {
+        content: "\a\a";
+    }
+    
+  }
+
+ 

@@ -1,3 +1,10 @@
 .container{
-    padding: 0 100px;
+    padding: 0 25px;
+    @include mq(mob) {
+padding: 0 70px;
+    }
+    @include mq(min-desk){
+    padding: 0 100px;}
+    @include mq(desk){
+    padding: 0 120px;}
 }

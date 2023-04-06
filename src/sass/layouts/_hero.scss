@@ -1,43 +1,260 @@
-main{
-    background-image: url(/src/images/MainPage7.png);
-    background-repeat: repeat;
-    background-size: cover;
-}
-
 .hero{
 
 }
 
 .hero__container{
-
 position: relative;
+display: flex;
+flex-direction: column;
 
+padding: 48px 0 42px 0;
+@include mq(mob){
+  padding: 78px 70px;
+}
+@include mq(tab){
+  padding-top: 41px;
+  padding-bottom: 80px;
+}
 
+@include mq(min-desk){
+  padding-top: 135px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+@include mq(desk){
+  padding-top: 94px;
+  padding-bottom: 58px;
+  padding-left: 120px;
+  padding-right: 120px;}
+}
 
+.hero .hex__right {
+position: absolute;
+top: 94px;
+right:0;
+display: flex;
+align-items: center;
+@include mq(mob){
+  right: 70px;
+  top: 118px;
+}
+@include mq(tab){
+  right: 70px;
+  top: 104px;
+}
+@include mq(min-desk){
+  right: 100px;
+  top: 163px;
+}
+@include mq(desk){
+  right: 120px;
+  top: 133px;
+}
+}
+
+.hero .hex__left{
+  position: absolute;
+top: 203px;
+left:0;
+display: flex;
+align-items: center;
+@include mq(mob){
+  left: 70px;
+  top: 225px;
+}
+@include mq(tab){
+  left: 70px;
+  top: 253px;
+}
+@include mq(min-desk){
+  left: 100px;
+  top: 268px;
+}
+@include mq(desk){
+  left: 120px;
+}
+}
+.hero .hex__right .hex__line{
+  height: 1px;
+width: 46px;
+background-color: #fff;
+@include mq(mob){
+  width: 50px;
+}
+@include mq(tab){
+  width: 69px;
+}
+
+@include mq(desk){
+  width: 149px;
+}
+}
+.hero .hex__left .hex__line{
+  height: 1px;
+width: 46px;
+background-color: #fff;
+@include mq(mob){
+  width: 50px;
+}
+@include mq(min-desk){
+  width: 69px;
+}
+
+@include mq(desk){
+  width: 149px;
+}
 }
 
 
 .hero__container::before,
 .hero__container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100px; /* розмір бокових падінгів */
-  background-image: url(/src/images/stripes.png); /* колір фону */
+
+  @include mq(mob){
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 70px; /* розмір бокових падінгів */
+    background-image: url(/src/images/background/stripes.png); /* колір фону */
+  }
+  @include mq(min-desk){
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* розмір бокових падінгів */
+    background-image: url(/src/images/background/stripes.png); /* колір фону */
+  }
+  @include mq(desk){
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px; /* розмір бокових падінгів */
+    background-image: url(/src/images/background/stripes.png); /* колір фону */
+  }
+
+
+  
 }
 
 .hero__container::before {
+  @include mq(mob){
   left: 0;
 border-right: 1px solid #fff;
 }
 
 
+}
+
+
 .hero__container::after {
+  @include mq(mob){
   right: 0;
   border-left: 1px solid #fff;
 }
+
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  
+  margin-bottom: 30px;
+  padding-left: 39px;
+padding-right: 23px;
+gap: 33px;
+  @include mq(mob){
+padding-left: 37px;
+padding-right: 13px;
+gap: 21px;
+margin-bottom: 44px;
+  }
+  @include mq(tab){
+padding: 0 70px;
+gap: 28px;
+margin-bottom: 17px;
+  }
+  @include mq(min-desk){
+padding: 0 49px 0 75px;
+gap: 23px;
+margin-bottom: 20px;
+  }
+  @include mq(desk){
+padding: 0 163px 0 177px;
+gap: 43px;
+
+  }
+}
+
+
 .hero__title {
-width: 100%;
-font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  @include mq(mob){
+font-size: 33px;
+  }
+  @include mq(tab){
+font-size: 48px;
+  }
+
+  @include mq(desk){
+font-size: 60px;
+  }
+
+}
+.hero__subtitle{
+  margin-left: auto;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  max-width: 226px;
+  @include mq(mob){
+    font-size: 16px;
+    max-width: 256px;
+      }
+  @include mq(tab){
+    font-size: 22px;
+    max-width: 100%;
+    margin: 0;
+      }
+  @include mq(min-desk){
+    font-size: 30px;
+    margin-left: auto;
+    max-width: 670px;
+      }
+  @include mq(desk){
+    font-size: 35px;
+    max-width: 797px;
+
+      }
+}
+
+.survey__link{
+  padding: 5px 18px;
+  border: 1px solid #FFFFFF;
+font-style: normal;
+font-weight: 800;
+font-size: 22px;
+line-height: 1.5;
+color: #fff;
+align-self: center;
+text-transform: uppercase;
+@include mq(mob){
+  font-size: 28px;
+  padding: 8px 36px;
+}
+@include mq(tab){
+  font-size: 35px;
+  padding: 12px 56px;
+}
+@include mq(desk){
+  font-size: 45px;
+  padding: 12px 60px;
+}
 }

@@ -1,0 +1,244 @@
+
+.welcome__container{
+    position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 18px;
+padding-bottom: 36px;
+
+
+
+
+@include mq(mob){
+    padding-top: 14px;
+    padding-bottom: 17px;
+}
+@include mq(tab) {
+    flex-direction: row;
+    padding-top: 42px;
+padding-bottom: 16px;
+padding-right: 10px;
+gap: 26px;
+align-items: center;
+}
+
+@include mq(min-desk){
+    padding-right: 100px;
+    gap: 40px;
+    padding-bottom: 28px;
+    padding-top: 55px;
+}
+@include mq(desk){
+    padding-top: 42px;
+    padding-bottom: 33px;
+    gap: 98px;
+}
+}
+.welcome__container::before {
+
+    @include mq(mob){
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 70px;
+    }
+    @include mq(min-desk){
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+    }
+    @include mq(desk){
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 120px;
+    }
+}
+
+.welcome__container::before {
+    @include mq(mob){
+    left: 0;
+  border-right: 1px solid #fff;
+  }
+}
+
+
+.welcome__img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 235px;
+    margin-bottom: 18px;
+
+    @include mq(tab){
+        min-width: 194px;
+        margin-left: 26px;
+    }
+    @include mq(min-desk){
+        min-width: 243px;
+        margin-left: 84px;
+    }
+    @include mq(desk){
+        min-width: 291px;
+        margin-left: 105px;
+    }
+}
+.welcome__img{
+margin-bottom: 18px;
+width: 100%;
+@include mq(mob){
+    margin-bottom: 7px;
+}
+@include mq(tab){
+    margin-bottom: 20px;
+}
+@include mq(min-desk){
+    margin-bottom: 25px;
+}
+@include mq(desk){
+    margin-bottom: 34px;
+}
+}
+.welcome__slogan {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    @include mq(tab){
+        font-size: 20px;
+    }
+    @include mq(min-desk){
+        font-size: 25px;
+    }
+    @include mq(desk){
+        font-size: 30px;
+    }
+}
+.welcome__body{
+@include mq(mob) {
+    padding: 0 5px 0 20px;
+}
+@include mq(tab){
+    padding: 0;
+}
+@include mq(desk){
+    padding-right: 30px;
+}
+
+
+    
+}
+.welcome__title-container{
+
+position: relative;
+border: 1px solid rgba(255, 255, 255, 0.5);
+padding: 8px 14px;
+
+margin-bottom: 21px;
+
+@include mq(mob){
+    padding: 12.5px 7px;
+}
+@include mq(tab){
+    padding: 13px 11px;
+    margin-bottom: 24px;
+}
+@include mq(min-desk){
+    padding: 7px 18px ;
+}
+@include mq(desk){
+    padding: 12px 22px;
+   
+}
+}
+.welcome__title{
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: uppercase;
+@include mq(mob) {
+    font-size: 18px;
+}
+@include mq(tab) {
+    font-size: 17px;
+}
+@include mq(min-desk) {
+    font-size: 25px;
+}
+@include mq(desk) {
+    font-size: 32px;
+}
+
+
+}
+
+.welcome_line{
+    position: absolute;
+    bottom: 2px;
+    right:20px;
+    width: 32px;
+height: auto;
+@include mq(tab)
+{
+    right:15px;
+    width: 35px;
+}
+@include mq(desk)
+{
+    right:100px;
+    width: 35px;
+}
+}
+
+.welcome__line-img{
+    width: 51px;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: -2px;
+    left: -1px;
+    box-sizing: border-box;
+
+    @include mq(mob){
+        width: 59px;
+        transform: rotate(-60deg);
+        left: -10px;
+    }
+
+
+    @include mq(desk){
+        transform: rotate(-45deg);
+        width: 101px;
+        left: -50px;
+    }
+}
+
+
+
+.welcome__text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.25;
+
+    @include mq(tab){
+        line-height: 1.5;
+        font-size: 13px;
+    }
+    @include mq(min-desk){
+        line-height: 1.75;
+        font-size: 16px;
+    }
+    @include mq(desk){
+        line-height: 1.45;
+        font-size: 24px;
+    }
+}
