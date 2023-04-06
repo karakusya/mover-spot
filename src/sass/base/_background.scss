@@ -1,22 +1,22 @@
 main{
-    background-image: url(/src/images/background/bckgrnd_320.png);
+    background-image: url(/src/images/background/background_min-mob.svg);
     background-repeat: repeat;
     background-size: cover;
 
     @include mq(mob){
-        background-image: url(/src/images/background/bckgrnd_480.png);
+        background-image: url(/src/images/background/background_mob.svg);
 
     }
     @include mq(tab){
-        background-image: url(/src/images/background/bckgrnd_640.png);
+        background-image: url(/src/images/background/background_mid.svg);
 
     }
     @include mq(min-desk){
-        background-image: url(/src/images/background/bckgrnd_1020.png);
+        background-image: url(/src/images/background/background_semi-big.svg);
 
     }
     @include mq(desk){
-        background-image: url(/src/images/background/bckgrnd_1400.png);
+        background-image: url(/src/images/background/background_big.svg);
 
     }
 
