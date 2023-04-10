@@ -117,17 +117,21 @@
     font-size: 15px;
     line-height: 1.5;
     text-transform: uppercase;
+    max-width: 213px;
     @include mq(mob){
         font-size: 16px;
+        max-width: 219px;
     }
     @include mq(tab){
         font-size: 15px;
     }
     @include mq(min-desk){
         font-size: 23px;
+        max-width: 312px;
     }
     @include mq(desk){
         font-size: 32px;
+        max-width: 437px;
     }
 }
 .send-mail__line{

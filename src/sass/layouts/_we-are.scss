@@ -2,8 +2,18 @@
 
 .we-are__container {
   position: relative;
+padding-top: 50%;
 
-  @include mq(mob) {}
+  @include mq(mob) {
+    padding-top: 40%;
+  }
+  @include mq(tab){   
+     padding-top: 30%;}
+
+  @media (min-width: 800px) {
+    padding-top: 35%;
+  }
+
 }
 
 
@@ -56,39 +66,11 @@
   }
 }
 
-.swiper {
 
-
-
-  height: 139px;
-  background-color: #FFFFFF;
-  margin-bottom: 38px;
-  margin-left: 20px;
-  margin-right: 20px;
-
-  @include mq(mob) {
-    height: 198px;
-    margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  @include mq(tab){
-    margin-right: 150px;
-    height: 180px;
-    margin-left: -30px;
-  }
-  @include mq(min-desk){
-    margin-right: 180px;
-    height: 308px;
-  }
-  @include mq(desk){
-    margin-right: 246px;
-    height: 413px;
-  }
-}
 
 .we-are__body {
   
+
 
   @include mq(mob) {
    
@@ -98,19 +80,19 @@
   
     bottom: 0;
     right: 70px;
-    margin-top: 47px;
+   
     margin-left: 160px;
   }
   @include mq(min-desk) {
   
     right: 100px;
-    margin-top: 58px;
+
     margin-left: 330px;
   }
   @include mq(desk) {
   
     right: 120px;
-    margin-top: 36px;
+
     margin-left: 513px;
   }
 }

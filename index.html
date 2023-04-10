@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.min.css">
+<link rel="stylesheet" href="./css/index.min.css">
+<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <header class="header">
@@ -49,20 +51,34 @@
                     <h3 class="welcome__slogan">Move on the spot</h3>
                 </div>
                 <div class="welcome__body">
-                    <div class="welcome__title-container">
-                        <h2 class="welcome__title">Welcome to Mover Spot!</h2>
-                        <div class="welcome_line">
-                            <div class="welcome__line-img"></div>
-                        </div>
-                    </div>
+                    
                     <p class="welcome__text">We're a digital marketplace for household transportation services in the United States, and we're on a mission to make moving as transparent and user-friendly as possible.<br><br>Our platform directly connects you with reputable moving companies, provides you with tools to compare and choose the best mover, and optimizes the cost of moving by cutting out unnecessary intermediaries.</p>
                 </div>
             </div>
         </section>
         <section class="section we-are">
             <div class="we-are__container container">
-                <div class="swiper">
-
+                <div class="swiper-slider">
+                    <div class="image-slider swiper-container">
+                        <div class="image-slider__wrapper swiper-wrapper">
+                            <div class="image-slider__slide swiper-slide">
+                                <img class="image-slider__image" src="./src/images/swiper/swiper1400.jpg" alt="" srcset="./src/images/swiper/swiper1400.jpg 735w, ./src/images/swiper/swiper1020.jpg 549w, ./src/images/swiper/swiper640.jpg 320w, ./src/images/swiper/swiper480.jpg 340w, ./src/images/swiper/swiper320.jpg 236w"
+                                sizes="(min-width: 1400px) 735w, (min-width: 1020px) 549w, (min-width: 640px) 320w, (min-width: 480px) 340w, (max-width: 479px)">
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <img class="image-slider__image" src="./src/images/swiper/swiper1400.jpg" alt="" srcset="./src/images/swiper/swiper1400.jpg 735w, ./src/images/swiper/swiper1020.jpg 549w, ./src/images/swiper/swiper640.jpg 320w, ./src/images/swiper/swiper480.jpg 340w, ./src/images/swiper/swiper320.jpg 236w"
+                                sizes="(min-width: 1400px) 735w, (min-width: 1020px) 549w, (min-width: 640px) 320w, (min-width: 480px) 340w, (max-width: 479px)">
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <img class="image-slider__image" src="./src/images/swiper/swiper1400.jpg" alt="" srcset="./src/images/swiper/swiper1400.jpg 735w, ./src/images/swiper/swiper1020.jpg 549w, ./src/images/swiper/swiper640.jpg 320w, ./src/images/swiper/swiper480.jpg 340w, ./src/images/swiper/swiper320.jpg 236w"
+                                sizes="(min-width: 1400px) 735w, (min-width: 1020px) 549w, (min-width: 640px) 320w, (min-width: 480px) 340w, (max-width: 479px)">
+                            </div>
+                        </div>
+                        <div class="prev__wrapper"><div class="swiper-button-prev"></div></div>
+                        <div class="next__wrapper"><div class="swiper-button-next"></div></div>
+                        
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
                 <div class="we-are__body">
                     <p class="we-are__text">We are not a broker, but rather a platform that connects you with hundreds of moving companies in your area. Our platform also provides comparison tools to help you make an informed decision on which company to move with. This way, you won't have to pay a hefty 30% fee to a broker just for a phone call.</p>
@@ -122,5 +138,8 @@
             <a href="mailto:info@moverspot.com" class="link email">info@moverspot.com</a>
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./swiper-script.js"></script>
 </body>
 </html>
