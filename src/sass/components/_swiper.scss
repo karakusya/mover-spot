@@ -46,12 +46,16 @@ left: 120px;
 
 .prev__wrapper{
     position: absolute;
-    top: 0;
+  
     left: 0;
+    bottom: 0.5px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
      display: flex;
      align-items: center;
      justify-content: center;
-border: 1px solid white;
+
 background-image: url(/src/images/background/stripes.png);
 background-repeat: repeat;
 background-size: cover;
@@ -64,6 +68,7 @@ height: 100%;
 @include mq(tab){
     width: 50px;
     left: 0px;
+    border-left: none;
 }
 @include mq(min-desk){
     width: 80px;
@@ -77,9 +82,12 @@ height: 100%;
 
 .next__wrapper{
     position: absolute;
-    top: 0;
+   
 right: 0;
-    border: 1px solid white;
+bottom: 0.5px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
  display: flex;
  align-items: center;
  justify-content: center;

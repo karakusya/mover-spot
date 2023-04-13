@@ -1,0 +1,34 @@
+.success__form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(9, 59, 146, 0.8);
+text-align: center;
+justify-content: center;
+display: none;
+align-items: center;
+
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+
+}
+.success__form-overlay.show {
+    display: flex;
+    opacity: 1;
+  }
+.success_text{
+    width: 100%;
+    font-weight: 800;
+    font-size: 24px;
+    @include mq(mob) {
+        font-size: 35px;
+    }
+    @include mq(min-desk) {
+        font-size: 55px;
+    }
+}

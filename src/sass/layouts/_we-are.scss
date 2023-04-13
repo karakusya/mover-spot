@@ -5,15 +5,17 @@
 padding-top: 50%;
 
   @include mq(mob) {
-    padding-top: 40%;
+    padding-top: 45%;
   }
   @include mq(tab){   
-     padding-top: 30%;}
+     padding-top: 35%;}
 
   @media (min-width: 800px) {
-    padding-top: 35%;
+    padding-top: 40%;
   }
-
+@include mq(desk){
+  padding-top: 35%;
+}
 }
 
 

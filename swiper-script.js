@@ -11,4 +11,12 @@ new Swiper('.image-slider',{
             centerSlides: true,
             loop: true,
             loopFillGroupWithBlank: true,
+
+            autoplay: {
+                delay:2000,
+
+                stopOnLastSlide: false,
+             disableOnInteraction: false
+            },
+            speed: 800,
 });

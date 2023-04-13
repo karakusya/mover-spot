@@ -1,23 +1,23 @@
 main{
     background-color: #00338E;
-    background-image: url(/src/images/background/background_min-mob.jpg);
+    background-image: url(/src/images/background/bckgrnd_320.png);
     background-repeat: repeat;
     background-size: cover;
 
     @include mq(mob){
-        background-image: url(/src/images/background/background_mob.jpg);
+        background-image: url(/src/images/background/bckgrnd_480.png);
 
     }
     @include mq(tab){
-        background-image: url(/src/images/background/background_mid.jpg);
+        background-image: url(/src/images/background/bckgrnd_640.png);
 
     }
     @include mq(min-desk){
-        background-image: url(/src/images/background/background_semi-big.jpg);
+        background-image: url(/src/images/background/bckgrnd_1020.png);
 
     }
     @include mq(desk){
-        background-image: url(/src/images/background/background_big.jpg);
+        background-image: url(/src/images/background/bckgrnd_1400.png);
 
     }
 
